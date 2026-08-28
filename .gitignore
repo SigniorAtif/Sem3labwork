@@ -1,0 +1,12 @@
+# Allowlist: track only C sources (and this file)
+*
+!*/
+!*.c
+!*.h
+!.gitignore
+
+# Never track tooling/agent dirs
+.claude/
+.claude-flow/
+.code-review-graph/
+graphify-out/
