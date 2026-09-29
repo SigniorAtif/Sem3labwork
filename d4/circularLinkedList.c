@@ -3,20 +3,16 @@
  *    node points back to the head) with the operations:
  *      - create the list with n nodes read from the user
  *      - display the list
- *      - find the length of the list
  *      - insert a node at a given position (beginning, middle or end)
  *      - delete a node at a given position
- *      - delete a node by its value
  *      - search for a value and report its position
  *
  * Sample Input:
  *   4
  *   10 20 30 40
- *   2        (position to insert at)
- *   77       (value to insert)
+ *   77 2     (value and position to insert -- value comes first)
  *   30       (value to search)
  *   0        (position to delete)
- *   77       (value to delete)
  *
  * Sample Output:
  *   Enter the number of nodes: 4
@@ -25,19 +21,13 @@
  *   Enter element 3: 30
  *   Enter element 4: 40
  *   created  : 10 -> 20 -> 30 -> 40 -> (head 10)
- *   length   : 4
- *   Enter the position to insert at: 2
- *   Enter the value to insert: 77
+ *   Enter the value and position to insert: 77 2
  *   inserted : 10 -> 20 -> 77 -> 30 -> 40 -> (head 10)
  *   Enter the value to search: 30
  *   value 30 found at position 3
  *   Enter the position to delete: 0
  *   delete at position 0 -> ok
  *   deleted  : 20 -> 77 -> 30 -> 40 -> (head 20)
- *   Enter the value to delete: 77
- *   delete value 77 -> ok
- *   deleted  : 20 -> 30 -> 40 -> (head 20)
- *   length   : 3
  */
 
 #include <stdio.h>

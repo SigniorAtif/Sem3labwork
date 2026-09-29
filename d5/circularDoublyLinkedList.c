@@ -4,10 +4,8 @@
  *      - create the list with n nodes read from the keyboard
  *      - display the list in forward and in reverse order
  *      - find the length of the list
- *      - insert a node at a position entered by the user (and at the front
- *        and the end)
- *      - delete the node at the front, at a position entered by the user,
- *        and at the end
+ *      - insert a node at a position entered by the user
+ *      - delete the node at a position entered by the user
  *      - search for a value and report its position
  *
  *    In a circular doubly linked list the last node's next points back to the
@@ -17,8 +15,7 @@
  * Sample Input:
  *   4
  *   10 20 30 40
- *   2        (position to insert at)
- *   77       (value to insert)
+ *   77 2     (value and position to insert -- value comes first)
  *   1        (position to delete)
  *
  * Sample Output:
@@ -30,16 +27,16 @@
  *   created  : [H] <-> 10 <-> 20 <-> 30 <-> 40 <-> [H]
  *   reversed : [H] <-> 40 <-> 30 <-> 20 <-> 10 <-> [H]
  *   length   : 4
- *   Enter the pos: 2
- *   Enter the val: 77
- *   inserted : [H] <-> 555 <-> 10 <-> 20 <-> 77 <-> 30 <-> 40 <-> 999 <-> [H]
- *   reversed : [H] <-> 999 <-> 40 <-> 30 <-> 77 <-> 20 <-> 10 <-> 555 <-> [H]
- *   search 555 -> pos 0
+ *   Enter the val and pos: 77 2
+ *   inserted : [H] <-> 10 <-> 20 <-> 77 <-> 30 <-> 40 <-> [H]
+ *   search 555 -> pos -1
  *   search 42  -> pos -1
  *   Enter the pos to delete: 1
- *   deleted position 0, 1 and last:
+ *   deleted position 1
  *   [H] <-> 10 <-> 77 <-> 30 <-> 40 <-> [H]
- *   reversed : [H] <-> 40 <-> 30 <-> 77 <-> 10 <-> [H]
+ *
+ * (555 and 42 are hard-coded search probes; neither is in the list, so both
+ *  report -1.)
  */
 
 #include <stdio.h>

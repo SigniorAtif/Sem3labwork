@@ -1,3 +1,23 @@
+/*
+ * Q. Write a C program to represent a polynomial using a linked list (one
+ *    node per term storing the coefficient and the power) and perform the
+ *    addition, the subtraction and the multiplication of two polynomials.
+ *
+ * Sample Input:
+ *   (no input is read; the two polynomials are hard-coded in main --
+ *    A = 5x^2 + 4x^1 + 2x^0 and B = 3x^2 + 1x^0)
+ *
+ * Sample Output:
+ *   A     = 5x^2 + 4x^1 + 2x^0
+ *   B     = 3x^2 + 1x^0
+ *   A + B = 8x^2 + 4x^1 + 3x^0
+ *   A - B = 2x^2 + 4x^1 + 1x^0
+ *   A * B = 15x^4 + 11x^2 + 12x^3 + 4x^1 + 2x^0
+ *
+ * (the product terms are not sorted by power -- multiply() appends each
+ *  partial product and simplify() only merges the like terms in place.)
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 

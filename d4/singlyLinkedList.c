@@ -2,10 +2,8 @@
  * Q. Write a C program to implement a Singly Linked List with the operations:
  *      - create the list with n nodes read from the user
  *      - display the list
- *      - find the length of the list
  *      - insert a node at a given position (beginning, middle or end)
  *      - delete a node at a given position
- *      - delete a node by its value
  *      - search for a value and report its position
  *
  * Sample Input:
@@ -15,7 +13,6 @@
  *   77       (value to insert)
  *   30       (value to search)
  *   0        (position to delete)
- *   77       (value to delete)
  *
  * Sample Output:
  *   Enter the number of nodes: 4
@@ -24,18 +21,14 @@
  *   Enter element 3: 30
  *   Enter element 4: 40
  *   created  : 10 -> 20 -> 30 -> 40 -> NULL
- *   length   : 4
- *   Enter the position and value to insert: 2 77
+ *   Enter the position to insert at: 2
+ *   Enter the value to insert: 77
  *   inserted : 10 -> 20 -> 77 -> 30 -> 40 -> NULL
  *   Enter the value to search: 30
  *   value 30 found at position 3
  *   Enter the position to delete: 0
  *   delete at position 0 -> ok
  *   deleted  : 20 -> 77 -> 30 -> 40 -> NULL
- *   Enter the value to delete: 77
- *   delete value 77 -> ok
- *   deleted  : 20 -> 30 -> 40 -> NULL
- *   length   : 3
  */
 
 #include <stdio.h>
