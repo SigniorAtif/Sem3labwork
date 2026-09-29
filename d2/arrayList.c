@@ -72,7 +72,6 @@ void insert(arraylist *list, int index, int value){
         return;
     }
     for(int i = list->size; i > index; i--){
-        printf("i: %d\n", i);
         list->arr[i] = list->arr[i-1];
     }
     list->arr[index] = value;
