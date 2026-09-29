@@ -1,4 +1,14 @@
-//write a program to take a odd digit number as input and extract the middle digit from it and print it in word format 1 -> "one" using switch case and while loop
+/* write a program to take a odd digit number as input and extract the middle
+digit from it and print it in word format 1 -> "one" using switch case and
+while loop
+
+Sample Input:
+  12345
+Sample Output:
+  Enter an odd digit number: 12345
+  three
+
+(an even digit count prints "not a odd unmber" and stops) */
 #include<stdio.h>
 int main() {
     int num, middle_digit, temp, count = 0;
