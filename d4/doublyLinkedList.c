@@ -2,20 +2,16 @@
  * Q. Write a C program to implement a Doubly Linked List with the operations:
  *      - create the list with n nodes read from the user
  *      - display the list in forward and in reverse order
- *      - find the length of the list
  *      - insert a node at a given position (beginning, middle or end)
  *      - delete a node at a given position
- *      - delete a node by its value
  *      - search for a value and report its position
  *
  * Sample Input:
  *   4
  *   10 20 30 40
- *   2        (position to insert at)
- *   77       (value to insert)
+ *   2 77     (position and value to insert)
  *   30       (value to search)
  *   0        (position to delete)
- *   77       (value to delete)
  *
  * Sample Output:
  *   Enter the number of nodes: 4
@@ -25,21 +21,13 @@
  *   Enter element 4: 40
  *   created  : NULL <-> 10 <-> 20 <-> 30 <-> 40 <-> NULL
  *   reversed : NULL <-> 40 <-> 30 <-> 20 <-> 10 <-> NULL
- *   length   : 4
- *   Enter the position to insert at: 2
- *   Enter the value to insert: 77
+ *   Enter the position and value to insert: 2 77
  *   inserted : NULL <-> 10 <-> 20 <-> 77 <-> 30 <-> 40 <-> NULL
- *   reversed : NULL <-> 40 <-> 30 <-> 77 <-> 20 <-> 10 <-> NULL
  *   Enter the value to search: 30
  *   value 30 found at position 3
  *   Enter the position to delete: 0
  *   delete at position 0 -> ok
  *   deleted  : NULL <-> 20 <-> 77 <-> 30 <-> 40 <-> NULL
- *   Enter the value to delete: 77
- *   delete value 77 -> ok
- *   deleted  : NULL <-> 20 <-> 30 <-> 40 <-> NULL
- *   reversed : NULL <-> 40 <-> 30 <-> 20 <-> NULL
- *   length   : 3
  */
 
 #include <stdio.h>

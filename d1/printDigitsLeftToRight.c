@@ -6,6 +6,15 @@ output ->
 2
 3
 4
+
+Sample Input:
+  1234
+Sample Output:
+  Enter a number: 1234
+  1
+  2
+  3
+  4
 */
 
 #include <stdio.h>

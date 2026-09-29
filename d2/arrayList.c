@@ -7,13 +7,19 @@
  *      - search for a value and report its index
  *      - display all elements of the list
  *
- * Sample Input / Output:
+ * Sample Input:
+ *   4
+ *   10 20 30 40
+ *   30       (value to search)
+ *   1        (index to delete)
  *
+ * Sample Output:
  *   How many elements (0 to 10)? 4
  *   Element 0: 10
  *   Element 1: 20
  *   Element 2: 30
  *   Element 3: 40
+ *   list size: 4
  *   10 20 30 40
  *   5 10 20 30 40
  *   Enter a value to search: 30
@@ -22,9 +28,9 @@
  *   5 10 20 30 40
  *   Deleted value: 5
  *
- * (The program inserts the value 5 at index 0 twice, so before the search the
- *  list is 5 5 10 20 30 40 and 30 sits at index 4. Deleting index 1 removes
- *  the duplicate 5, leaving 5 10 20 30 40.)
+ * (main inserts the value 5 at index 0 twice. Before the search the list is
+ *  5 5 10 20 30 40, so 30 sits at index 4. Deleting index 1 removes the
+ *  duplicate 5, leaving 5 10 20 30 40.)
  */
 
 #include <stdio.h>
@@ -66,7 +72,6 @@ void insert(arraylist *list, int index, int value){
         return;
     }
     for(int i = list->size; i > index; i--){
-        printf("i: %d\n", i);
         list->arr[i] = list->arr[i-1];
     }
     list->arr[index] = value;

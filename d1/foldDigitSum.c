@@ -4,7 +4,13 @@ example -> 1964728
  96
 472
   8
-sum -> 577*/
+sum -> 577
+
+Sample Input:
+  1964728
+Sample Output:
+  Enter number: 1964728
+  sum -> 577 */
 
 #include <stdio.h>
 

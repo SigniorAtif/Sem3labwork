@@ -1,4 +1,10 @@
-// weather a year is a leep year or not
+/* whether a year is a leap year or not
+
+Sample Input:
+  2024
+Sample Output:
+  Enter a year: 2024
+  2024 is a leap year. */
 #include<stdio.h>
 int main(){
     int year;
